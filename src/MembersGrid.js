@@ -69,7 +69,7 @@ function MembersGrid() {
         },
         {
             sourceImage: './members/16.webp',
-            infos: ["- Second oldest but fake maknae", "- Soft, cute, funny, extra", "Leader of ∞! unit"]
+            infos: ["- Second oldest but fake maknae", "- Soft, cute, funny, extra", "- Leader of ∞! unit"]
         },
 
         {
