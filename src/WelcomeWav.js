@@ -66,7 +66,7 @@ function WelcomeWav({ isDarkMode }) {
                     fontSize: '3.2vh',
                     fontWeight: 'bold',
 
-                }}>WELLCOME, BABY WAV</h1>
+                }}>WELCOME, BABY WAV</h1>
                 <p className='welcome-small-text' style={{
                     fontWeight: 'bold',
                     fontStyle: 'italic',

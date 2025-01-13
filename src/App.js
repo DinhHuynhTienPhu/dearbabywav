@@ -1,7 +1,4 @@
 import AboutTheSystem from './AboutTheSystem.js';
-import logo from './logo.svg';
-import MemberCard from './MemberCard.js';
-import Members from './Members.js';
 import MembersGrid from './MembersGrid.js';
 import OtherNamesTerms from './OtherNamesTerms.js';
 import './WelcomeWav.js'
@@ -24,7 +21,7 @@ function App() {
       <WhatIsTripleS />
       <AboutTheSystem />
       <OtherNamesTerms />
-      {/* <MembersGrid /> */}
+      <MembersGrid />
       </div>
 
     </div>

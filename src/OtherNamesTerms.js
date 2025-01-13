@@ -23,7 +23,14 @@ function OtherNameTerms() {
                         textAlign: 'left',
                     }}>
                         <p className='section-text'>
-                            SIGNAL: tripleS youtube playlist. The videos are filmed, edited and upload in
+                            <a href='https://triples.fandom.com/wiki/TripleS#Name_Meaning'> tripleS</a>: originally stand for "Social, Sonyo, Seoul, but the CEO said we can give it our own meaning.
+                        </p>
+                        
+                        <p className='section-text'>
+                            <a href='https://triples.fandom.com/wiki/WAV'>WAV </a>: tripleS' fandom name, when three S are combined, it looks like a wave. (this name was chosen by the fans through a graity)
+                            </p>
+                        <p className='section-text'>
+                            <a href='https://www.youtube.com/watch?v=jn2hiI7rqTA&list=PLtfvnr3voKT2TA3uFFqrrzNdOrfGQKlEs&ab_channel=tripleSofficial'> SIGNAL</a>: tripleS youtube playlist. The videos are filmed, edited and upload in
                             the same day. Everyday. (luv u content team)
                         </p>
                         <p className='section-text'>

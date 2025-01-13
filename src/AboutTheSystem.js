@@ -23,7 +23,7 @@ function AboutTheSystem() {
 
                 
                 <p className='section-text'>
-                    Photocard = Objekt 
+                    Objekt = Photocard
                 </p>
                 <p className='section-text'>
                     COMO = Vote Point
@@ -52,6 +52,7 @@ function AboutTheSystem() {
                             width: '20vw',
                             height: 'auto',
                             }} />
+                            <div className='section-text'>Image of an objekt</div>
                         </a>
                     </span>
                     <span style={{
