@@ -23,7 +23,7 @@ function OtherNameTerms() {
                         textAlign: 'left',
                     }}>
                         <p className='section-text'>
-                            <a href='https://triples.fandom.com/wiki/TripleS#Name_Meaning'> tripleS</a>: originally stand for "Social, Sonyo, Seoul, but the CEO said we can give it our own meaning.
+                            <a href='https://triples.fandom.com/wiki/TripleS#Name_Meaning'> tripleS</a>: originally stand for "Social, Sonyo, Seoul", but the CEO said we can give it our own meaning.
                         </p>
                         
                         <p className='section-text'>

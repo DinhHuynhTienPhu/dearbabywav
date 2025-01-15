@@ -21,11 +21,11 @@ function MembersGrid() {
         },
         {
             sourceImage: './members/4.webp',
-            infos: ['-Ex BoniHani, Buster, CutieL (T.T my dear S4)', '- She is good at MC-ing']
+            infos: ['-Ex BoniHani, Buster, CutieL (T.T my dear S4)', '- Good at MC-ing']
         },
         {
             sourceImage: './members/5.webp',
-            infos: ['- Oldest (born 2001)', '- Unofifcial face of the group']
+            infos: ['- Oldest (born 2001)', '- Unofficial face of the group']
         },
         {
             sourceImage: './members/6.webp',
@@ -49,11 +49,11 @@ function MembersGrid() {
         },
         {
             sourceImage: './members/11.webp',
-            infos: ["- Rapper", "- 2nd Japanese S and the first S to be revealed in Tokyo"]
+            infos: ["- Rapper", "- Second Japanese S and the first S revealed in Tokyo"]
         },
         {
             sourceImage: './members/12.webp',
-            infos: ["- Yapper (Soomin's rival)", "- Her last name is Kwak, hence her representative animal is duck", "- Mature makane line	"]
+            infos: ["- Yapper (Soomin's rival)", "- Her last name is Kwak, so her representative animal is a duck", "- Mature makane line	"]
         },//continue adding more members here to 24 members
         {
             sourceImage: './members/13.webp',
@@ -61,11 +61,11 @@ function MembersGrid() {
         },
         {
             sourceImage: './members/14.webp',
-            infos: ["- Producer/song writer", "- She has calm personality", "- Handsome!!!"]
+            infos: ["- Producer/song writer", "- She has a calm personality", "- Handsome!!!"]
         },
         {
             sourceImage: './members/15.webp',
-            infos: ["- Goddess", "- In top visual members", "- SoXinz4life"]
+            infos: ["- Goddess", "- One of the top visuals in the group", "- SoXinz4life"]
         },
         {
             sourceImage: './members/16.webp',
@@ -83,7 +83,7 @@ function MembersGrid() {
 
         {
             sourceImage: './members/19.webp',
-            infos: ["- tripleS's kisser", "- All rounder", "- Lim Hyeongjun's nephew"]
+            infos: ["- tripleS's kisser", "- All rounder", "- Lim Hyeongjun's niece"]
         },
         {
             sourceImage: './members/20.webp',
@@ -99,11 +99,11 @@ function MembersGrid() {
         },
         {
             sourceImage: './members/23.webp',
-            infos: ["- Born 2010 (maknae)", "- Birth name Jeong Hae-rin (similar to S2)", "- If you want to harm her, must step on 23 bodies"]
+            infos: ["- Born 2010 (maknae)", "- Birth name Jeong Hae-rin (similar to S2)", "- If you want to harm her, you must step over 23 bodies"]
         },
         {
             sourceImage: './members/24.webp',
-            infos: ["- Birth name Suh-yeon (similar to S1)", "- Practice ballet", "- Black Swan"]
+            infos: ["- Birth name Suh-yeon (similar to S1)", "- Practices ballet", "- Black Swan"]
         }
 
     ];
