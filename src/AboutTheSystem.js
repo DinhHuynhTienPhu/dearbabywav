@@ -65,7 +65,7 @@ function AboutTheSystem() {
                             Then when there is a Dimension you can use your COMO to vote.
                         </p>
                         <p className='section-text'>
-                            The subject of a Dimension can vary,from choosing members for a unit to songs, concepts, etc.'
+                            The subject of a Dimension can vary, from choosing members for a unit to title songs, concepts, artist name, etc.
                         </p>
                     </span>
                 </div>
