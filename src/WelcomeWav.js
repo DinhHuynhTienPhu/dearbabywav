@@ -5,16 +5,12 @@ import  { useEffect, useState, useRef } from 'react';
 
 function WelcomeWav({ isDarkMode }) {
     const [isVisible, setIsVisible] = useState(true);
-    //constantly check if the component is visible, using its position in the viewport
     const componentRef = useRef();
     useEffect(() => {
         const checkIfVisible = () => {
+            if (!componentRef.current) return;
             const { top, bottom } = componentRef.current.getBoundingClientRect();
-            //log topm, bottom, and window.innerHeight
-            console.log(top, bottom, window.innerHeight);
-            
             if (top >= 60 && bottom <= window.innerHeight) {
-                
                 setIsVisible(true);
             } else {
                 setIsVisible(false);
@@ -30,42 +26,29 @@ function WelcomeWav({ isDarkMode }) {
         <section style={{
             backgroundColor: 'black',
             margin: '0',
+            position: 'relative',
+            minHeight: '100svh', /* modern small viewport height */
+            backgroundImage: "url('./0124-upscale.webp')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            overflow: 'hidden',
         }}>
-                
-                <img src='./0124-upscale.png' alt='triples concept background' style={
-                    {
-                        width: '100%', height: '100vh', objectFit: 'cover', opacity: '0.75',
-                        position: 'fixed',
-                        left: '0',
-                        zIndex: '0',
-                    }
-                } />
-                
-
-
-            <div style={{
-                top: '0',
-                left: '0',
-                width: 'auto',
-                height: '100vh',
-                backgroundColor:'rgba(0, 0, 0, 0.0)',
-            }}></div>
-
+            {/* Content overlay */}
             <div  style={{
                 position: 'absolute', 
                 top: '35%',
-                //center
                 left: '0',
                 right: '0',
                 marginInline: 'auto',
                 width: '100%',
                 color: 'white',
+                zIndex: 1,
             }} ref={componentRef}
                 className={`fade-component ${isVisible ? 'fade-in' : 'fade-out'}`}>
                 <h1 classNames='response-smaller-font' style={{
                     fontSize: '3.2vh',
                     fontWeight: 'bold',
-
                 }}>WELCOME, BABY WAV</h1>
                 <p className='welcome-small-text' style={{
                     fontWeight: 'bold',
