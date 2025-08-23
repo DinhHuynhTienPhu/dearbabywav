@@ -474,6 +474,9 @@ a {
   .gk-icon { width: 36px; height: 36px; }
   .gk-title { font-size: 4.6vw; }
   .gk-desc { font-size: 3.6vw; }
+  .links-grid-divider {
+    height: 25vh;
+  }
 }
 
 /* Welcome hero background adjustments for mobile to prevent overlap */

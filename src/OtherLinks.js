@@ -158,6 +158,9 @@ function OtherLinks() {
                     </div>
                 ))}
             </div>
+            <div className='links-grid-divider'>
+
+            </div>
 
             <h2 className="section-header" style={{ fontSize: '2vw' }}>Community Resources</h2>
             <div className="links-grid-container">
