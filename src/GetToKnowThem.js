@@ -80,7 +80,7 @@ function GetToKnowThem() {
             title: 'tripleS Signal',
             description: 'The full journey of tripleS, with 900+ episodes. Or you can skip this and watch the abridged version below.',
             icon: './signal.png',
-            url: 'https://www.youtube.com/watch?v=H3Eidd3h4CE&list=PLuuVJzM7See49APBWO33WMLcal8qq8K6O',
+            url: 'https://www.youtube.com/watch?v=jn2hiI7rqTA&list=PLtfvnr3voKT2TA3uFFqrrzNdOrfGQKlEs',
         },
         {
             title: 'tripleS Signal Abridged',
