@@ -104,6 +104,13 @@ function OtherLinks() {
             url: 'https://www.youtube.com/@MangoNim./featured',
         },
         {
+            image: './linklogos/subsearch.webp',
+            title: 'Subsearch',
+            description: 'Have you ever wanted to find a specific moment in a video? Now you can!',
+            url: 'https://subsearch.pages.dev',
+            icon: './logo.png'
+        },
+        {
             image: './linklogos/database2.webp',
             title: 'Video database',
             description: 'Comprehensive resource for browsing and tracking all video content of tripleS',
@@ -134,7 +141,7 @@ function OtherLinks() {
         {
             image: './linklogos/0105.webp',
             title: 'tripleS 0105',
-            description: 'Ever wonder when was their last interaction? Me too',
+            description: 'Ever wondered when was their last interaction? Me too',
             url: 'https://triples0105.netlify.app',
             icon: './linklogos/0105logo.webp',
         },

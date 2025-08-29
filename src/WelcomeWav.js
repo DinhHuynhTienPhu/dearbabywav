@@ -49,7 +49,7 @@ function WelcomeWav({ isDarkMode }) {
                 <h1 classNames='response-smaller-font' style={{
                     fontSize: '3.2vh',
                     fontWeight: 'bold',
-                }}>WELCOME, BABY WAV</h1>
+                }}>WELCOMEWAV</h1>
                 <p className='welcome-small-text' style={{
                     fontWeight: 'bold',
                     fontStyle: 'italic',
