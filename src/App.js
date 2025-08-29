@@ -7,6 +7,7 @@ import WhatIsThisPage from './WhatIsThisPage.js';
 import WhatIsTripleS from './WhatIsTripleS.js';
 import OtherLinks from './OtherLinks.js';
 import GetToKnowThem from './GetToKnowThem.js';
+import Footer from './Footer.js';
 
 function App() {
   return (
@@ -29,6 +30,11 @@ function App() {
       <GetToKnowThem />
       <OtherLinks />
       </div>
+
+      {/* spacer to ensure content is not hidden behind footer on small viewports */}
+      <div aria-hidden="true" className="mobile-spacer" />
+
+      <Footer />
 
     </div>
   );

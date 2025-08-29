@@ -477,6 +477,27 @@ a {
   .links-grid-divider {
     height: 25vh;
   }
+  footer[aria-label="site-footer"]{
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    z-index: auto;
+    height: auto;
+  }
+  /* small reserve space so last item doesn't butt up to footer visually */
+  .App {
+    padding-bottom: 24px;
+  }
+  .mobile-spacer {
+    display: block;
+    height: 110vw;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .mobile-spacer { display: none; }
 }
 
 /* Welcome hero background adjustments for mobile to prevent overlap */
