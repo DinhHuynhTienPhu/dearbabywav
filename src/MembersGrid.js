@@ -8,30 +8,30 @@ import { useTranslation } from 'react-i18next';
 function MembersGrid() {
     const { t } = useTranslation();
     const members = [
-        { sourceImage: './members/1.webp', infos: t('members.cards.1', { returnObjects: true }), id: 1 },
-        { sourceImage: './members/2.webp', infos: t('members.cards.2', { returnObjects: true }), id: 2 },
-        { sourceImage: './members/3.webp', infos: t('members.cards.3', { returnObjects: true }), id: 3 },
-        { sourceImage: './members/4.webp', infos: t('members.cards.4', { returnObjects: true }), id: 4 },
-        { sourceImage: './members/5.webp', infos: t('members.cards.5', { returnObjects: true }), id: 5 },
-        { sourceImage: './members/6.webp', infos: t('members.cards.6', { returnObjects: true }), id: 6 },
-        { sourceImage: './members/7.webp', infos: t('members.cards.7', { returnObjects: true }), id: 7 },
-        { sourceImage: './members/8.webp', infos: t('members.cards.8', { returnObjects: true }), id: 8 },
-        { sourceImage: './members/9.webp', infos: t('members.cards.9', { returnObjects: true }), id: 9 },
-        { sourceImage: './members/10.webp', infos: t('members.cards.10', { returnObjects: true }), id: 10 },
-        { sourceImage: './members/11.webp', infos: t('members.cards.11', { returnObjects: true }), id: 11 },
-        { sourceImage: './members/12.webp', infos: t('members.cards.12', { returnObjects: true }), id: 12 },
-        { sourceImage: './members/13.webp', infos: t('members.cards.13', { returnObjects: true }), id: 13 },
-        { sourceImage: './members/14.webp', infos: t('members.cards.14', { returnObjects: true }), id: 14 },
-        { sourceImage: './members/15.webp', infos: t('members.cards.15', { returnObjects: true }), id: 15 },
-        { sourceImage: './members/16.webp', infos: t('members.cards.16', { returnObjects: true }), id: 16 },
-        { sourceImage: './members/17.webp', infos: t('members.cards.17', { returnObjects: true }), id: 17 },
-        { sourceImage: './members/18.webp', infos: t('members.cards.18', { returnObjects: true }), id: 18 },
-        { sourceImage: './members/19.webp', infos: t('members.cards.19', { returnObjects: true }), id: 19 },
-        { sourceImage: './members/20.webp', infos: t('members.cards.20', { returnObjects: true }), id: 20 },
-        { sourceImage: './members/21.webp', infos: t('members.cards.21', { returnObjects: true }), id: 21 },
-        { sourceImage: './members/22.webp', infos: t('members.cards.22', { returnObjects: true }), id: 22 },
-        { sourceImage: './members/23.webp', infos: t('members.cards.23', { returnObjects: true }), id: 23 },
-        { sourceImage: './members/24.webp', infos: t('members.cards.24', { returnObjects: true }), id: 24 },
+        { sourceImage: './members/1.webp', infos: t('members.cards.1', { returnObjects: true }), id: 1, link: 'https://triples.fandom.com/wiki/Yoon_SeoYeon' },
+        { sourceImage: './members/2.webp', infos: t('members.cards.2', { returnObjects: true }), id: 2, link: 'https://triples.fandom.com/wiki/Jeong_HyeRin' },
+        { sourceImage: './members/3.webp', infos: t('members.cards.3', { returnObjects: true }), id: 3, link: 'https://triples.fandom.com/wiki/Lee_JiWoo' },
+        { sourceImage: './members/4.webp', infos: t('members.cards.4', { returnObjects: true }), id: 4, link: 'https://triples.fandom.com/wiki/Kim_ChaeYeon' },
+        { sourceImage: './members/5.webp', infos: t('members.cards.5', { returnObjects: true }), id: 5, link: 'https://triples.fandom.com/wiki/Kim_YooYeon' },
+        { sourceImage: './members/6.webp', infos: t('members.cards.6', { returnObjects: true }), id: 6, link: 'https://triples.fandom.com/wiki/Kim_SooMin' },
+        { sourceImage: './members/7.webp', infos: t('members.cards.7', { returnObjects: true }), id: 7, link: 'https://triples.fandom.com/wiki/Kim_NaKyoung' },
+        { sourceImage: './members/8.webp', infos: t('members.cards.8', { returnObjects: true }), id: 8, link: 'https://triples.fandom.com/wiki/Gong_YuBin' },
+        { sourceImage: './members/9.webp', infos: t('members.cards.9', { returnObjects: true }), id: 9, link: 'https://triples.fandom.com/wiki/Kaede' },
+        { sourceImage: './members/10.webp', infos: t('members.cards.10', { returnObjects: true }), id: 10, link: 'https://triples.fandom.com/wiki/Seo_DaHyun' },
+        { sourceImage: './members/11.webp', infos: t('members.cards.11', { returnObjects: true }), id: 11, link: 'https://triples.fandom.com/wiki/Kotone' },
+        { sourceImage: './members/12.webp', infos: t('members.cards.12', { returnObjects: true }), id: 12, link: 'https://triples.fandom.com/wiki/Kwak_YeonJi' },
+        { sourceImage: './members/13.webp', infos: t('members.cards.13', { returnObjects: true }), id: 13, link: 'https://triples.fandom.com/wiki/Nien' },
+        { sourceImage: './members/14.webp', infos: t('members.cards.14', { returnObjects: true }), id: 14, link: 'https://triples.fandom.com/wiki/Park_SoHyun' },
+        { sourceImage: './members/15.webp', infos: t('members.cards.15', { returnObjects: true }), id: 15, link: 'https://triples.fandom.com/wiki/Xinyu' },
+        { sourceImage: './members/16.webp', infos: t('members.cards.16', { returnObjects: true }), id: 16, link: 'https://triples.fandom.com/wiki/Mayu' },
+        { sourceImage: './members/17.webp', infos: t('members.cards.17', { returnObjects: true }), id: 17, link: 'https://triples.fandom.com/wiki/Lynn' },
+        { sourceImage: './members/18.webp', infos: t('members.cards.18', { returnObjects: true }), id: 18, link: 'https://triples.fandom.com/wiki/JooBin' },
+        { sourceImage: './members/19.webp', infos: t('members.cards.19', { returnObjects: true }), id: 19, link: 'https://triples.fandom.com/wiki/Jeong_HaYeon' },
+        { sourceImage: './members/20.webp', infos: t('members.cards.20', { returnObjects: true }), id: 20, link: 'https://triples.fandom.com/wiki/Park_ShiOn' },
+        { sourceImage: './members/21.webp', infos: t('members.cards.21', { returnObjects: true }), id: 21, link: 'https://triples.fandom.com/wiki/Kim_ChaeWon' },
+        { sourceImage: './members/22.webp', infos: t('members.cards.22', { returnObjects: true }), id: 22, link: 'https://triples.fandom.com/wiki/Sullin' },
+        { sourceImage: './members/23.webp', infos: t('members.cards.23', { returnObjects: true }), id: 23, link: 'https://triples.fandom.com/wiki/SeoAh' },
+        { sourceImage: './members/24.webp', infos: t('members.cards.24', { returnObjects: true }), id: 24, link: 'https://triples.fandom.com/wiki/JiYeon' },
     ];
         
     return (
@@ -58,7 +58,7 @@ function MembersGrid() {
                 <div className="member-grid-container">
                     {members.map((item, index) => (
                         <div key={index} className="member-grid-item">
-                            <MemberCard sourceImage={item.sourceImage} infos={item.infos} id={item.id} />
+                            <MemberCard sourceImage={item.sourceImage} infos={item.infos} id={item.id} link={item.link} />
                         </div>
                     ))}
                 </div>
