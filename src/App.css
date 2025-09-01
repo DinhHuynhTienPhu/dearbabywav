@@ -8,6 +8,7 @@
 
 .App {
   text-align: center;
+  padding-top: 0; /* offset hero a bit so sticky header doesn't overlap first content */
 }
 
 .App-logo {
@@ -30,6 +31,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background: transparent; /* fully transparent */
+  backdrop-filter: blur(6px); /* subtle glass over background */
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: none; /* remove line that could appear as a band */
 }
 
 .App-link {
@@ -503,4 +511,79 @@ a {
 /* Welcome hero background adjustments for mobile to prevent overlap */
 @media screen and (max-width: 600px) {
   .welcome-hero-fixed-bg { position: absolute !important; height: 60vh !important; }
+}
+
+/* header styles */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  background: transparent; /* fully transparent */
+  backdrop-filter: blur(6px); /* subtle glass over background */
+  -webkit-backdrop-filter: blur(6px);
+  border-bottom: none; /* remove line that could appear as a band */
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6px 10px; /* smaller height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.header-brand { display: inline-flex; align-items: center; gap: 8px; color: white; text-decoration: none; }
+.brand-logo { width: 24px; height: 24px; border-radius: 6px; object-fit: cover; }
+.brand-name { font-weight: 800; letter-spacing: 0.2px; }
+.header-actions { display: flex; align-items: center; gap: 8px; }
+
+.lang-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px; /* smaller button */
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(20,20,20,0.35); /* only button has subtle tint */
+  color: white;
+  cursor: pointer;
+}
+.lang-button:hover { border-color: rgba(255,255,255,0.35); }
+.lang-button:focus { outline: none; box-shadow: 0 0 0 2px rgba(255,255,255,0.2); }
+.lang-flag { width: 20px; height: 14px; object-fit: cover; border-radius: 2px; }
+.lang-code { font-weight: 700; font-size: 12px; opacity: 0.9; }
+.lang-caret { opacity: 0.7; }
+
+.lang-dropdown { position: relative; }
+.lang-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  min-width: 180px;
+  background: #0f0f10;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+  padding: 8px;
+}
+.lang-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+.lang-item:hover { background: rgba(255,255,255,0.06); }
+.lang-item.selected { background: rgba(255,255,255,0.12); }
+.lang-label { font-weight: 600; }
+
+@media screen and (max-width: 600px) {
+  .header-inner { padding: 6px 8px; }
+  .brand-name { display: none; }
 }

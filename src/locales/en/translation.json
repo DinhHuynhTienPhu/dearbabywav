@@ -1,0 +1,102 @@
+{
+  "welcome.title": "WELCOMEWAV",
+  "welcome.subtitle": "WISH YOU ALL THE BEST STANNING THE GROUP WITH ALL POSSIBILITIES",
+
+  "whatIsThis.title": "WHAT IS THIS PAGE",
+  "whatIsThis.body1": "This page aims to be a simple, straightforward guide to help you get to know tripleS.",
+  "whatIsThis.body2": "Our goal is to help you understand the basic information about the group’s members and system.",
+
+  "whatIs.title": "WHAT IS TRIPLES",
+  "whatIs.body": "tripleS is a 24-member K-pop girl group. Each member is numbered from S1 to S24, in order of their reveal date. Aiming to be the first decentralized idol group, tripleS has a voting system where their fans (WAV) can participate in the group’s units, concepts, and songs.",
+
+  "system.title": "ABOUT THE SYSTEM",
+  "system.lead": "tripleS has a unique photocards and voting system, but to simplify:",
+  "system.objekt": "Objekt = Photocard",
+  "system.como": "COMO = Vote Point",
+  "system.dimension": "Dimension = Sub-unit",
+  "system.gravity": "Gravity = Vote Event",
+  "system.img.caption": "Image of an objekt",
+  "system.body1": "When you obtain an Objekt (digital or physical) you will get a COMO point (some special Objekts can give you 2 or 3).",
+  "system.body2": "Then when there is a Dimension you can use your COMO to vote.",
+  "system.body3": "The subject of a Dimension can vary, from choosing members for a unit to title songs, concepts, artist name, etc.",
+
+  "terms.title": "OTHER NAMES/TERMS",
+  "terms.triples": "originally stand for \"Social, Sonyo, Seoul\", but the CEO said we can give it our own meaning.",
+  "terms.wav": "tripleS' fandom name, when three S are combined, it looks like a wave. (this name was chosen by the fans through a gravity)",
+  "terms.signal": "tripleS youtube playlist. The videos are filmed, edited and upload in the same day. Everyday. (luv u content team)",
+  "terms.smallbig": "Trainees are called \"s,\" and after becoming official members, they are \"S.\"",
+  "terms.haus": "tripleS' dorm.",
+  "terms.modhaus": "tripleS' management agency",
+  "terms.badgewar": "Their variety show series",
+  "terms.unnie": "Older sister",
+
+  "members.title": "MEMBERS",
+  "members.intro": "This section will provide images of each members and their unique traits for you to remember their names and faces.",
+  "members.disclaimerTitle": "***** Disclaimer *****",
+  "members.disclaimer": "Since members used to be revealed one by one in the SIGNAL series, for better experience and prevent spoilers, it is recommended to watch the series first before reading the infos.",
+
+  "members.cards": {
+    "1": ["- 1st member aka mother", "- Best at games", "- ASSEMBLE25 leader"],
+    "2": ["- Reliable and caring", "- Leader of VV unit", "- Captain of maknae line"],
+    "3": ["- Tallz", "- Hockey player", "- Voice of the group", "- Honorable member of content team"],
+    "4": ["- Ex BoniHani, Busters, CutieL", "- Good at MC-ing", "- Good variety sense"],
+    "5": ["- Oldest (born 2001) aka father", "- Unofficial face of the group"],
+    "6": ["- Rizzler", "- Yapper", "- Pure and wild", "- Likes YooYeon a lot"],
+    "7": ["- BIBI's younger sister", "- Cool look but actually very cute (and a bit silly)", "- Black cat"],
+    "8": ["- Badge War ss1 ep3 08:30", "- Everyone's best friend (Jiwoo)", "- Gong Yubammmmmm"],
+    "9": ["- First Japanese member", "- Softy UwU", "- Main dancer", "- Duality: Yamada-kun and Kaede-chan"],
+    "10": ["- Best main vocal", "- Soda punch", "- Can imitate members and Squidward(?)", "- Sometimes she's chic girl Dahyun"],
+    "11": ["- Rapper", "- Second Japanese S and first S revealed in Tokyo", "- Can rap diss people or MNET lol"],
+    "12": ["- Yapper (Soomin's rival)", "- Last name is Kwak → representative animal is a duck", "- Mature maknae line", "- Yeonjimon"],
+    "13": ["- Taiwanese-Vietnamese", "- Extremely extrovert", "- Probably strongest/fastest member"],
+    "14": ["- Producer/song writer", "- Calm personality but sometimes cute as hell", "- Handsome!!!"],
+    "15": ["- Goddess", "- One of the top visuals in the group", "- Sometimes a bit weird", "- SoXinz4life"],
+    "16": ["- Second oldest but fake maknae", "- Soft, cute, funny, extra", "- Leader of ∞! unit", "- Usually teased about her height"],
+    "17": ["- Cutest shark in the world", "- Soft contrary to her strong appearance", "- Very kind-hearted"],
+    "18": ["- Fluent in English", "- Has a YouTube series JooManSa interviewing members", "- 2nd youngest"],
+    "19": ["- tripleS's kisser", "- All rounder", "- Lim Hyeongjun's niece", "- You should watch Badge War ss3"],
+    "20": ["- Loves bread a lot", "- Softest voice", "- Likes to work out", "- Chill, laidback personality"],
+    "21": ["- Dreams of being a strawberry farmer", "- Practices martial arts", "- Can use nunchaku", "- Alien"],
+    "22": ["- Thai princess", "- Speaks Thai, English, Chinese, Korean (learning)", "- Comic relief of the group"],
+    "23": ["- Born 2010 (maknae) (our baby)", "- Birth name Jeong Hae-rin (similar to S2)", "- If you want to harm her, you must step over 23 bodies"],
+    "24": ["- Birth name Ji Suh-yeon (similar to S1)", "- Practices ballet", "- Black Swan", "- She is a ballerina"]
+  },
+
+  "know.title": "GET TO KNOW THEM",
+  "know.subtitle": "Scroll the timeline and tap the icons or titles to explore.",
+  "know.steps": [
+    { "title": "tripleS: thesis", "desc": "The first ever video on tripleS youtube channel." },
+    { "title": "tripleS on Gura Show", "desc": "Gura Show EP 12, each member introduces themselves." },
+    { "title": "tripleS on Weekly Idol", "desc": "Weekly Idol EP 662 tripleS ASSEMBLE24, featuring all members." },
+    { "title": "Explaining ALL 24 tripleS Members Like Its A Sorority", "desc": "YouTuber Ben Atmos explains each member in detail." },
+    { "title": "Badge War (3 seasons)", "desc": "A fun competition between members to earn badges." },
+    { "title": "tripleS Signal", "desc": "The full journey of tripleS, with 900+ episodes. Or you can skip this and watch the abridged version below." },
+    { "title": "tripleS Signal Abridged", "desc": "Abridged version of tripleS Signal, focusing on key moments and highlights edited by KIKKU." }
+  ],
+
+  "links.title": "OTHER LINKS",
+  "links.subtitle": "Quick links to explore more content. Tap a card to open the link in a new tab.",
+  "links.official": "Official",
+  "links.community": "Community Resources",
+  "links.officialLinks": [
+    "tripleS official site with news, schedules, and announcements.",
+    "Music videos, livestreams, and highlights.",
+    "Quickest updates and announcements from the official account.",
+    "Visual updates, reels, member posts, and more.",
+    "Join the official community chat server.",
+    "Short videos and fun content from the official account."
+  ],
+  "links.fanmadeLinks": [
+    "Community-maintained profiles and trivia about members and group.",
+    "Discussions, updates, and memes from fans.",
+    "Translated videos of tripleS, including interviews, variety shows, livestreams.",
+    "Have you ever wanted to find a specific moment in a video? Now you can!",
+    "Comprehensive resource for browsing and tracking all video content of tripleS",
+    "A very detailed google slide guide to tripleS, updated weekly.",
+    "Modern, sleek, and user-friendly interface for exploring tripleS content.",
+    "A comprehensive guide to the lore and story of tripleS.",
+    "Ever wondered when was their last interaction? Me too"
+  ],
+
+  "footer.madeBy": "made by wav with"
+}

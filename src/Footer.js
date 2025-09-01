@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer aria-label="site-footer" style={{
       position: 'relative',
@@ -25,7 +27,7 @@ export default function Footer() {
         gap: 8,
         fontFamily: "system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial"
       }}>
-        <span style={{opacity: 0.95}}>made by wav with</span>
+        <span style={{opacity: 0.95}}>{t('footer.madeBy')}</span>
         <span aria-hidden="true" style={{color: '#ff6b6b', fontSize: 26, lineHeight: 1, fontStyle: 'italic'}}>♥</span>
         {/* <span style={{opacity: 0.85}}>love</span>
         <span aria-hidden="true" style={{ color: '#ff6b6b', fontSize: 16, lineHeight: 1 }}>♥</span> */}

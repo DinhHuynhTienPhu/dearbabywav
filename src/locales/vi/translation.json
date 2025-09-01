@@ -1,0 +1,101 @@
+{
+  "welcome.title": "WELCOMEWAV",
+  "welcome.subtitle": "Chúc bạn có những trải nghiệm tuyệt vời khi stan group with all possibilities",
+
+  "whatIsThis.title": "TRANG NÀY LÀ GÌ",
+  "whatIsThis.body1": "Trang này là một bản hướng dẫn đơn giản giúp bạn làm quen với tripleS.",
+  "whatIsThis.body2": "Mục tiêu là giúp bạn hiểu những thông tin cơ bản về các thành viên và hệ thống của nhóm.",
+
+  "whatIs.title": "TRIPLES LÀ GÌ",
+  "whatIs.body": "tripleS là nhóm nhạc nữ K-pop gồm 24 thành viên. Mỗi thành viên được đánh số từ S1 đến S24 theo thứ tự ngày công bố. tripleS hướng tới mô hình idol phi tập trung đầu tiên, nơi người hâm mộ (WAV) có thể tham gia bình chọn cho unit, concept và bài hát.",
+
+  "system.title": "VỀ HỆ THỐNG",
+  "system.lead": "tripleS có hệ thống photocard và bình chọn đặc biệt, tóm lược như sau:",
+  "system.objekt": "Objekt = Thẻ ảnh (photocard)",
+  "system.como": "COMO = Điểm bình chọn",
+  "system.dimension": "Dimension = Unit phụ",
+  "system.gravity": "Gravity = Sự kiện bình chọn",
+  "system.img.caption": "Hình ảnh một Objekt",
+  "system.body1": "Khi bạn sở hữu một Objekt (bản digital hoặc bản cứng), bạn sẽ nhận được 1 điểm COMO (một số Objekt đặc biệt có thể cho 2 hoặc 3 điểm).",
+  "system.body2": "Khi có Dimension, bạn có thể dùng điểm COMO để bình chọn.",
+  "system.body3": "Chủ đề của Dimension rất đa dạng: chọn thành viên cho unit, bài chủ đề, concept, tên nghệ sĩ, v.v.",
+
+  "terms.title": "CÁC TÊN/THUẬT NGỮ KHÁC",
+  "terms.triples": "tripleS: ban đầu là viết tắt của \"Social, Sonyo, Seoul\", nhưng CEO nói rằng chúng ta có thể tự đặt ý nghĩa cho nó.",
+  "terms.wav": "WAV: tên fandom của tripleS; ba chữ S ghép lại trông như một làn sóng. (tên này do fan bình chọn qua một kỳ gravity)",
+  "terms.signal": "SIGNAL: playlist YouTube của tripleS. Video được quay, dựng và đăng cùng ngày, mỗi ngày.",
+  "terms.smallbig": "s thường và S hoa: Thực tập sinh gọi là \"s\", khi chính thức debut sẽ là \"S\".",
+  "terms.haus": "HAUS: ký túc xá của tripleS.",
+  "terms.modhaus": "MODHAUS: công ty quản lý của tripleS",
+  "terms.badgewar": "Badge War: series show giải trí của nhóm",
+  "terms.unnie": "Unnie: Chị gái",
+
+  "members.title": "CÁC THÀNH VIÊN",
+  "members.intro": "Mục này cung cấp hình ảnh và vài nét đặc trưng để bạn dễ nhớ mặt gọi tên từng thành viên.",
+  "members.disclaimerTitle": "***** Lưu ý *****",
+  "members.disclaimer": "Vì các thành viên trước đây được công bố lần lượt trong series SIGNAL, để tránh spoil và có trải nghiệm tốt hơn, nên xem series trước khi đọc thông tin.",
+  "members.cards": {
+    "1": ["- Thành viên đầu tiên (mẹ của nhóm)", "- Giỏi chơi game", "- ASSEMBLE25 Leader"],
+    "2": ["- Đáng tin cậy", "- Leader unit VV", "- Leader của maknae line"],
+    "3": ["- Cao", "- Chơi khúc côn cầu", "- Giọng nói của nhóm", "- Thành viên danh dự của team nội dung"],
+    "4": ["- Ex BoniHani, Busters, CutieL", "- Giỏi MC", "- Rất hài trong các show giải trí"],
+    "5": ["- Lớn tuổi nhất (2001) (bố của nhóm)", "- Bộ mặt của nhóm"],
+    "6": ["- Rizzler", "- Nói hơi nhiều :v", "- Thuần khiết và hoang dã", "- Rất thích YooYeon"],
+    "7": ["- Em gái của BIBI", "- Ngoại hình ngầu nhưng thực ra rất đáng yêu (và hơi ngố)", "- Mèo đen"],
+    "8": ["- Badge War ss1 ep3 08:30", "- Bạn của mọi nhà", "- Gong Yubammmmmm"],
+    "9": ["- Thành viên Nhật đầu tiên", "- Soft UwU", "- Main dancer", "- Hai mặt: Yamada-kun và Kaede-chan"],
+    "10": ["- Main vocal đỉnh", "- Soda Punch", "- Bắt chước giọng member và Squidward(?)", "- Đôi khi là cô nàng chic Dahyun"],
+    "11": ["- Rapper", "- S Nhật thứ hai và là S đầu tiên công bố ở Tokyo", "- Rap diss người khác hoặc có khi là MNET =)))"],
+    "12": ["- Nói nhiều (đối thủ của Soomin)", "- Họ Kwak → linh vật: vịt", "- Maknae line nhưng chín chắn", "- Yeonjimon"],
+    "13": ["- Người Đài gốc Việt", "- Cực kỳ hướng ngoại", "- (Chắc là) khỏe/nhanh nhất nhóm"],
+    "14": ["- Producer/nhạc sĩ", "- Tính cách điềm đạm nhưng đôi lúc siêu đáng yêu", "- Đẹp trai!!!"],
+    "15": ["- Nữ thần", "- Top visual của nhóm", "- Thỉnh thoảng hơi lạ", "- SoXinz4life"],
+    "16": ["- Lớn thứ nhì trong nhóm nhưng như maknae", "- Mềm mại, đáng yêu, vui tính, nhiều năng lượng", "- Leader unit ∞!", "- Hay bị trêu vì thấp"],
+    "17": ["- Cá mập đáng yêu", "- Ngoại hình mạnh mẽ nhưng tính cách dịu dàng", "- Rất tốt bụng"],
+    "18": ["- Nói tiếng Anh lưu loát", "- Có series YouTube JooManSa, phỏng vấn member", "- Áp út trong nhóm"],
+    "19": ["- Chuyên gia hôn của tripleS", "- All rounder", "- Cháu gái của Lim Hyeongjun", "- Nên xem Badge War ss3 để biết thêm"],
+    "20": ["- Rất thích bánh mì", "- Giọng nói nhỏ nhẹ", "- Thích tập gym", "- Tính cách chill, thoải mái"],
+    "21": ["- Ước mơ làm nông trại dâu", "- Tập võ thuật", "- Dùng được côn nhị khúc", "- Alien"],
+    "22": ["- Công chúa Thái Lan", "- Nói được Thái, Anh, Trung, Hàn (đang học)", "- Cây hài của nhóm"],
+    "23": ["- Sinh năm 2010 (maknae) (em bé)", "- Tên khai sinh Jeong Hae-rin (giống S2)", "- Muốn làm hại em phải bước qua 23 người"],
+    "24": ["- Tên khai sinh Ji Suh-yeon (giống S1)", "- Tập ballet", "- Thiên nga đen", "- She is a ballerina"]
+  },
+
+  "know.title": "LÀM QUEN VỚI HỌ",
+  "know.subtitle": "Cuộn xuống và chạm vào icon hoặc tiêu đề để khám phá.",
+  "know.steps": [
+    { "title": "tripleS: thesis", "desc": "Video đầu tiên trên kênh YouTube của tripleS." },
+    { "title": "tripleS trên Gura Show", "desc": "Gura Show EP 12, từng thành viên tự giới thiệu." },
+    { "title": "tripleS trên Weekly Idol", "desc": "Weekly Idol EP 662 tripleS ASSEMBLE24 với đầy đủ thành viên." },
+    { "title": "Giải thích 24 thành viên tripleS như một hội nữ sinh", "desc": "YouTuber Ben Atmos giải thích chi tiết từng thành viên." },
+    { "title": "Badge War (3 mùa)", "desc": "Cuộc thi vui giữa các thành viên để giành huy hiệu." },
+    { "title": "tripleS Signal", "desc": "Hành trình đầy đủ của tripleS, 900+ tập. Có thể xem bản rút gọn bên dưới." },
+    { "title": "tripleS Signal (Rút gọn)", "desc": "Bản rút gọn tập trung vào các khoảnh khắc nổi bật do KIKKU biên tập." }
+  ],
+
+  "links.title": "LIÊN KẾT KHÁC",
+  "links.subtitle": "Các đường dẫn khác liên quan đến nhóm. Nhấn vào thẻ để mở trong tab mới.",
+  "links.official": "Chính thức",
+  "links.community": "Tài nguyên cộng đồng",
+  "links.officialLinks": [
+    "Trang chính thức của tripleS với tin tức, lịch trình và thông báo.",
+    "MV, livestream và các đoạn highlight.",
+    "Cập nhật và thông báo nhanh nhất từ tài khoản chính thức.",
+    "Ảnh, reels, bài đăng của thành viên và hơn thế nữa.",
+    "Tham gia server chat cộng đồng chính thức.",
+    "Các video ngắn và nội dung vui từ tài khoản chính thức."
+  ],
+  "links.fanmadeLinks": [
+    "Các thông tin do cộng đồng duy trì về thành viên và nhóm.",
+    "Thảo luận, cập nhật và meme từ fan.",
+    "Dịch các video của tripleS: phỏng vấn, show giải trí, livestream...",
+    "Bạn từng muốn tìm một moment trong video mà không nhớ chính xác lúc nào? Đây là công cụ dành cho bạn!",
+    "Nguồn tổng hợp để duyệt và theo dõi tất cả các video của tripleS",
+    "Slide hướng dẫn rất chi tiết về tripleS, cập nhật hàng tuần.",
+    "Giao diện hiện đại, trực quan để khám phá nội dung tripleS.",
+    "Tổng hợp lore, concept của tripleS.",
+    "Page cho ppotoz con"
+  ],
+
+  "footer.madeBy": "made by wav with"
+}

@@ -1,16 +1,18 @@
 import React from 'react';
 import './App.css';
+import { useTranslation } from 'react-i18next';
 
 function AboutTheSystem() {
+    const { t } = useTranslation();
 
     return (
         <section className='section'>
             <div className='section'>
                 <h1 className='section-header'>
-                    ABOUT THE SYSTEM
+                    {t('system.title')}
                 </h1>
                 <p className='section-text'>
-                    tripleS has a unique photocards and voting system, but to simplify:
+                    {t('system.lead')}
                 </p>
                 <div className='section-text-container' style={{
                     //aglign the childs horizontally
@@ -22,16 +24,16 @@ function AboutTheSystem() {
 
                 
                 <p className='section-text'>
-                    Objekt = Photocard
+                    {t('system.objekt')}
                 </p>
                 <p className='section-text'>
-                    COMO = Vote Point
+                    {t('system.como')}
                 </p>
                 <p className='section-text'>
-                    Dimension = Sub-unit
+                    {t('system.dimension')}
                 </p>
                 <p className='section-text'>
-                    Gravity = Vote Event
+                    {t('system.gravity')}
                 </p>
                 </div>
                 <div className='text-and-image-same-row' style={{
@@ -51,21 +53,20 @@ function AboutTheSystem() {
                             width: '20vw',
                             height: 'auto',
                             }} />
-                            <div className='section-text'>Image of an objekt</div>
+                            <div className='section-text'>{t('system.img.caption')}</div>
                         </a>
                     </span>
                     <span style={{
                         textAlign: 'left',
                     }}>
                         <p className='section-text'>
-                            When you obtain an Objekt (digital or physical) you will get a COMO point (some special
-                            Objekts can give you 2 or 3).
+                            {t('system.body1')}
                         </p>
                         <p className='section-text'>
-                            Then when there is a Dimension you can use your COMO to vote.
+                            {t('system.body2')}
                         </p>
                         <p className='section-text'>
-                            The subject of a Dimension can vary, from choosing members for a unit to title songs, concepts, artist name, etc.
+                            {t('system.body3')}
                         </p>
                     </span>
                 </div>

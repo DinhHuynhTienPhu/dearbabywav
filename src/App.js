@@ -8,12 +8,17 @@ import WhatIsTripleS from './WhatIsTripleS.js';
 import OtherLinks from './OtherLinks.js';
 import GetToKnowThem from './GetToKnowThem.js';
 import Footer from './Footer.js';
+import { useTranslation } from 'react-i18next';
+import Header from './Header.js';
 
 function App() {
+  useTranslation();
   return (
     <div className="App" style={{
       margin: '0',
     }}>
+      {/* header with language dropdown */}
+      <Header />
       <WelcomeWav />
       <div style={{
         backgroundColor: 'black',
@@ -30,10 +35,6 @@ function App() {
       <GetToKnowThem />
       <OtherLinks />
       </div>
-
-      {/* spacer to ensure content is not hidden behind footer on small viewports */}
-      <div aria-hidden="true" className="mobile-spacer" />
-
       <Footer />
 
     </div>

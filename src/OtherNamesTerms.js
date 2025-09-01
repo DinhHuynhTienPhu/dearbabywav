@@ -1,14 +1,16 @@
 import React from 'react';
  //import classNames from 'classnames';
 import './App.css';
+import { useTranslation } from 'react-i18next';
 
 function OtherNameTerms() {
+    const { t } = useTranslation();
 
     return (
         <section className='section'>
             <div className='section'>
                 <h1 className='section-header'>
-                    OTHER NAMES/TERMS
+                    {t('terms.title')}
                 </h1>
                 <div className='text-and-image-same-row-reverse' style={{
                     display: 'flex',
@@ -23,30 +25,29 @@ function OtherNameTerms() {
                         textAlign: 'left',
                     }}>
                         <p className='section-text'>
-                            <a href='https://triples.fandom.com/wiki/TripleS#Name_Meaning'> tripleS</a>: originally stand for "Social, Sonyo, Seoul", but the CEO said we can give it our own meaning.
+                            <a href='https://triples.fandom.com/wiki/TripleS#Name_Meaning'> tripleS</a>: {t('terms.triples')}
                         </p>
                         
                         <p className='section-text'>
-                            <a href='https://triples.fandom.com/wiki/WAV'>WAV </a>: tripleS' fandom name, when three S are combined, it looks like a wave. (this name was chosen by the fans through a gravity)
+                            <a href='https://triples.fandom.com/wiki/WAV'>WAV </a>: {t('terms.wav')}
                             </p>
                         <p className='section-text'>
-                            <a href='https://www.youtube.com/watch?v=jn2hiI7rqTA&list=PLtfvnr3voKT2TA3uFFqrrzNdOrfGQKlEs&ab_channel=tripleSofficial'> SIGNAL</a>: tripleS youtube playlist. The videos are filmed, edited and upload in
-                            the same day. Everyday. (luv u content team)
+                            <a href='https://www.youtube.com/watch?v=jn2hiI7rqTA&list=PLtfvnr3voKT2TA3uFFqrrzNdOrfGQKlEs&ab_channel=tripleSofficial'> SIGNAL</a>: {t('terms.signal')}
                         </p>
                         <p className='section-text'>
-                           small s and big S: Trainees are called "s," and after becoming official members, they are "S."
+                           {t('terms.smallbig')}
                         </p>
                         <p className='section-text'>
-                            HAUS: tripleS' dorm.
+                            {t('terms.haus')}
                         </p>
                         <p className='section-text'>
-                            MODHAUS: tripleS' management agency
+                            {t('terms.modhaus')}
                         </p>
                         <p className='section-text'>
-                            Badge War: Their variety show series
+                            {t('terms.badgewar')}
                         </p>
                         <p className='section-text'>
-                            Unnie: Older sister
+                            {t('terms.unnie')}
                         </p>
 
                     </span>

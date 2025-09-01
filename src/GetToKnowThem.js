@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { useTranslation } from 'react-i18next';
 
 const Step = ({ step, active, side, onClick }) => {
     const handleClick = (e) => {
@@ -45,55 +46,27 @@ const Step = ({ step, active, side, onClick }) => {
 };
 
 function GetToKnowThem() {
-    const steps = [
-        {
-            title: 'tripleS: thesis ',
-            description: 'The first ever video on tripleS youtube channel.',
-            icon: './thesis.webp',
-            url: 'https://www.youtube.com/watch?v=TVrdkrqpBV4',
-        },
-        {
-            title: 'tripleS on Gura Show',
-            description: 'Gura Show EP 12, each member introduces themselves.',
-            icon: './gurashow.webp',
-            url: 'https://www.youtube.com/watch?v=HaUXySGq2DY',
-        },
-        {
-            title: 'tripleS on weekly idol',
-            description: 'Weekly Idol EP 662 tripleS ASSEMBLE24, featuring all members.',
-            icon: './weeklyidol.jpg',
-            url: 'https://www.youtube.com/watch?v=7fJQAljAMJQ',
-        },
-        {
-            title: 'Explaining ALL 24 tripleS Members Like Its A Sorority',
-            description: 'Youtuber Ben Atmos explains each member in detail.',
-            icon: './benatmos.webp',
-            url: 'https://youtu.be/3yCF8aXzgnI?si=IA9EISdm1eQ4pgWN',
-        },
-        {
-            title: 'Badge War (3 seasons)',
-            description: 'A fun competition between members to earn badges.',
-            icon: './badgewar.webp',
-            url: 'https://www.youtube.com/watch?v=H3Eidd3h4CE&list=PLuuVJzM7See49APBWO33WMLcal8qq8K6O',
-        },
-        {
-            title: 'tripleS Signal',
-            description: 'The full journey of tripleS, with 900+ episodes. Or you can skip this and watch the abridged version below.',
-            icon: './signal.png',
-            url: 'https://www.youtube.com/watch?v=jn2hiI7rqTA&list=PLtfvnr3voKT2TA3uFFqrrzNdOrfGQKlEs',
-        },
-        {
-            title: 'tripleS Signal Abridged',
-            description: 'Abridged version of tripleS Signal, focusing on key moments and highlights edited by KIKKU.',
-            icon: './signalshort.webp',
-            url: 'https://www.youtube.com/watch?v=rbbwTY7AV2Y&list=PLxfQOCAfcvMtiVEXtXrEQDjtwasdIU_kj',
-        },
+    const { t } = useTranslation();
+    const stepsBase = [
+        { icon: './thesis.webp', url: 'https://www.youtube.com/watch?v=TVrdkrqpBV4' },
+        { icon: './gurashow.webp', url: 'https://www.youtube.com/watch?v=HaUXySGq2DY' },
+        { icon: './weeklyidol.jpg', url: 'https://www.youtube.com/watch?v=7fJQAljAMJQ' },
+        { icon: './benatmos.webp', url: 'https://youtu.be/3yCF8aXzgnI?si=IA9EISdm1eQ4pgWN' },
+        { icon: './badgewar.webp', url: 'https://www.youtube.com/watch?v=H3Eidd3h4CE&list=PLuuVJzM7See49APBWO33WMLcal8qq8K6O' },
+        { icon: './signal.png', url: 'https://www.youtube.com/watch?v=jn2hiI7rqTA&list=PLtfvnr3voKT2TA3uFFqrrzNdOrfGQKlEs' },
+        { icon: './signalshort.webp', url: 'https://www.youtube.com/watch?v=rbbwTY7AV2Y&list=PLxfQOCAfcvMtiVEXtXrEQDjtwasdIU_kj' },
     ];
+    const stepTexts = t('know.steps', { returnObjects: true }) || [];
+    const steps = stepsBase.map((s, idx) => ({
+        ...s,
+        title: stepTexts[idx]?.title || '',
+        description: stepTexts[idx]?.desc || ''
+    }));
 
     return (
         <section className="section">
-            <h1 className="section-header">GET TO KNOW THEM</h1>
-            <p className="section-text">Scroll the timeline and tap the icons or titles to explore.</p>
+            <h1 className="section-header">{t('know.title')}</h1>
+            <p className="section-text">{t('know.subtitle')}</p>
 
             <div className="gk-wrapper">
                 <div className="gk-track" aria-hidden="true" />

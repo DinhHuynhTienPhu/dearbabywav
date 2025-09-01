@@ -2,8 +2,10 @@ import React from 'react';
 //import classNames from 'classnames';
 import './App.css';
 import { useEffect, useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function WelcomeWav({ isDarkMode }) {
+    const { t } = useTranslation();
     // Use a continuous opacity value (0..1) computed from scroll position for smoother fade
     const [opacity, setOpacity] = useState(1);
     // Ref on the whole section; compute opacity from window scroll progress across this section
@@ -81,11 +83,11 @@ function WelcomeWav({ isDarkMode }) {
                     fontSize: '3.2vh',
                     fontWeight: 'bold',
 
-                }}>WELCOMEWAV</h1>
+                }}>{t('welcome.title')}</h1>
                 <p className='welcome-small-text' style={{
                     fontWeight: 'bold',
                     fontStyle: 'italic',
-                }}>WISH YOU ALL THE BEST STANNING THE GROUP WITH ALL POSSIBILITIES</p>
+                }}>{t('welcome.subtitle')}</p>
             </div>
         </section>
     );

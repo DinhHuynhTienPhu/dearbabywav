@@ -3,156 +3,57 @@ import React from 'react';
 import './App.css';
 import MemberCard from './MemberCard.js';
 import './Grid.css';
+import { useTranslation } from 'react-i18next';
 
 function MembersGrid() {
+    const { t } = useTranslation();
     const members = [
-        {
-            sourceImage: './members/1.webp',
-            infos: ['- 1st member aka mother', '- Best at games', '- ASSEMBLE25 leader'],
-            id:1
-        },
-        {
-            sourceImage: './members/2.webp',
-            infos: ['- Reliable and caring',
-                '- Leader of VV unit',
-                '- Captain of maknae line'],
-            id:2
-        },
-        {
-            sourceImage: './members/3.webp',
-            infos: ['- Tallz', '- Hockey player', '- Voice of the group', '- Honorable member of content team'],
-            id:3
-        },
-        {
-            sourceImage: './members/4.webp',
-            infos: ['-Ex BoniHani, Buster, CutieL (T.T my dear S4)', '- Good at MC-ing', '- Good variety sense'],
-            id:4
-        },
-        {
-            sourceImage: './members/5.webp',
-            infos: ['- Oldest (born 2001) aka father', '- Unofficial face of the group'],
-            id:5
-        },
-        {
-            sourceImage: './members/6.webp',
-            infos: ['- Rizzler', '- Yapper', '- Pure and wild', '- Likes YooYeon a lot'],
-            id:6
-        },
-        {
-            sourceImage: './members/7.webp',
-            infos: ["- BIBI's younger sister  ", '- She has a cool appearance but actually she is really cute (and... dumb(?))',"- Black cat"],
-            id:7
-        },
-        {
-            sourceImage: './members/8.webp',
-            infos: ["- Badge War ss1 ep3 08:30", "-  ̷J̷i̷w̷o̷o̷'̷s̷  Everyone's best friend", "- Gong Yubammmmmm"],
-            id:8
-        },
-        {
-            sourceImage: './members/9.webp',
-            infos: ["- First Japanese member", "- Softy UwU", "- Main dancer", "- Duality: Yamada-kun and Kaede-chan"],
-            id:9
-        },
-        {
-            sourceImage: './members/10.webp',
-            infos: ["- Best main vocal", "- Soda punch", "- Can imitate members and Squidward(?)","- Sometimes she's chic girl Dahyun"],
-            id:10
-        },
-        {
-            sourceImage: './members/11.webp',
-            infos: ["- Rapper", "- Second Japanese S and the first S revealed in Tokyo","- She can rap diss people or MNET lol"],
-            id:11
-        },
-        {
-            sourceImage: './members/12.webp',
-            infos: ["- Yapper (Soomin's rival)", "- Her last name is Kwak, so her representative animal is a duck", "- Mature maknae line", "- Yeonjimon"],
-            id:12
-        },//continue adding more members here to 24 members
-        {
-            sourceImage: './members/13.webp',
-            infos: ["- Taiwanese-Vietnamese", "- Extremely Extrovert", "- Probably strongest/fastest member"],
-            id:13
-        },
-        {
-            sourceImage: './members/14.webp',
-            infos: ["- Producer/song writer", "- She has a calm personality but sometimes cute as hell", "- Handsome!!!"],
-            id:14
-        },
-        {
-            sourceImage: './members/15.webp',
-            infos: ["- Goddess", "- One of the top visuals in the group", "- She is weird sometimes", "- SoXinz4life"],
-            id:15
-        },
-        {
-            sourceImage: './members/16.webp',
-            infos: ["- Second oldest but fake maknae", "- Soft, cute, funny, extra", "- Leader of ∞! unit","- Usually being teased because of her height"],
-            id:16
-        },
-
-        {
-            sourceImage: './members/17.webp',
-            infos: ["- Cutest shark in the world", "- Contrary to her strong appearance, she is soft","- Very kind-hearted"],
-            id:17
-        },
-        {
-            sourceImage: './members/18.webp',
-            infos: ["- Can speak English fluently", "- Has a youtube series JooManSa in which she interview members", "- 2nd youngest"],
-            id:18
-        },
-
-        {
-            sourceImage: './members/19.webp',
-            infos: ["- tripleS's kisser", "- All rounder", "- Lim Hyeongjun's niece", "- You should watch badge war ss3"],
-            id:19
-        },
-        {
-            sourceImage: './members/20.webp',
-            infos: ["- She likes breads, alot", "- Softest voice", "- She likes to workout", "- Chill, laidback personality"],
-            id:20
-        },
-        {
-            sourceImage: './members/21.webp',
-            infos: ["- Dream of being strawberry farmer", "- Practice martial arts", "- Can use Nunchaku", "- Alien"],
-            id:21
-        },
-        {
-            sourceImage: './members/22.webp',
-            infos: ["- Thai princess", "- She can speak Thai, English, Chinese, Korean (learning)","- Comic relief of the group"],
-            id:22
-        },
-        {
-            sourceImage: './members/23.webp',
-            infos: ["- Born 2010 (maknae) (our baby)", "- Birth name Jeong Hae-rin (similar to S2)", "- If you want to harm her, you must step over 23 bodies"],
-            id:23
-        },
-        {
-            sourceImage: './members/24.webp',
-            infos: ["- Birth name Ji Suh-yeon (similar to S1)", "- Practices ballet", "- Black Swan","- She is ballerina"],
-            id:24
-        }
-
+        { sourceImage: './members/1.webp', infos: t('members.cards.1', { returnObjects: true }), id: 1 },
+        { sourceImage: './members/2.webp', infos: t('members.cards.2', { returnObjects: true }), id: 2 },
+        { sourceImage: './members/3.webp', infos: t('members.cards.3', { returnObjects: true }), id: 3 },
+        { sourceImage: './members/4.webp', infos: t('members.cards.4', { returnObjects: true }), id: 4 },
+        { sourceImage: './members/5.webp', infos: t('members.cards.5', { returnObjects: true }), id: 5 },
+        { sourceImage: './members/6.webp', infos: t('members.cards.6', { returnObjects: true }), id: 6 },
+        { sourceImage: './members/7.webp', infos: t('members.cards.7', { returnObjects: true }), id: 7 },
+        { sourceImage: './members/8.webp', infos: t('members.cards.8', { returnObjects: true }), id: 8 },
+        { sourceImage: './members/9.webp', infos: t('members.cards.9', { returnObjects: true }), id: 9 },
+        { sourceImage: './members/10.webp', infos: t('members.cards.10', { returnObjects: true }), id: 10 },
+        { sourceImage: './members/11.webp', infos: t('members.cards.11', { returnObjects: true }), id: 11 },
+        { sourceImage: './members/12.webp', infos: t('members.cards.12', { returnObjects: true }), id: 12 },
+        { sourceImage: './members/13.webp', infos: t('members.cards.13', { returnObjects: true }), id: 13 },
+        { sourceImage: './members/14.webp', infos: t('members.cards.14', { returnObjects: true }), id: 14 },
+        { sourceImage: './members/15.webp', infos: t('members.cards.15', { returnObjects: true }), id: 15 },
+        { sourceImage: './members/16.webp', infos: t('members.cards.16', { returnObjects: true }), id: 16 },
+        { sourceImage: './members/17.webp', infos: t('members.cards.17', { returnObjects: true }), id: 17 },
+        { sourceImage: './members/18.webp', infos: t('members.cards.18', { returnObjects: true }), id: 18 },
+        { sourceImage: './members/19.webp', infos: t('members.cards.19', { returnObjects: true }), id: 19 },
+        { sourceImage: './members/20.webp', infos: t('members.cards.20', { returnObjects: true }), id: 20 },
+        { sourceImage: './members/21.webp', infos: t('members.cards.21', { returnObjects: true }), id: 21 },
+        { sourceImage: './members/22.webp', infos: t('members.cards.22', { returnObjects: true }), id: 22 },
+        { sourceImage: './members/23.webp', infos: t('members.cards.23', { returnObjects: true }), id: 23 },
+        { sourceImage: './members/24.webp', infos: t('members.cards.24', { returnObjects: true }), id: 24 },
     ];
         
     return (
         <section className='section'>
             <div className='section'>
                 <h1 className='section-header'>
-                    MEMBERS
+                    {t('members.title')}
                 </h1>
                 <p className='section-text'>
-                    This section wil provide image of each members and their unique traits for you to remember their names and faces.
+                    {t('members.intro')}
                 </p>
                 <p className='section-text' style={{
                     color: 'red',
                     fontWeight: 'bold',
                 }} >
-                    ***** Disclaimer *****
+                    {t('members.disclaimerTitle')}
                 </p>
                 <p className='section-text' style={{
                     color: 'red',
                     fontWeight: 'bold',
                 }}>
-                    Since members used to be revealed one by one in the SIGNAL series, for better experience and prevent spoilers, it is recommended to watch the series first before reading the infos.
+                    {t('members.disclaimer')}
                 </p>
                 <div className="member-grid-container">
                     {members.map((item, index) => (
@@ -162,11 +63,6 @@ function MembersGrid() {
                     ))}
                 </div>
             </div>
-
-           
-            
-            
-            
 
         </section>
     );
