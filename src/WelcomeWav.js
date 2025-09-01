@@ -57,6 +57,7 @@ function WelcomeWav({ isDarkMode }) {
                 {
                     width: '100%', height: '100vh', objectFit: 'cover', opacity: '0.75',
                     position: 'fixed',
+                    top: '0', /* ensure it covers under the header */
                     left: '0',
                     zIndex: '0',
                 }

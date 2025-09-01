@@ -34,10 +34,10 @@
   position: sticky;
   top: 0;
   z-index: 10000;
-  background: transparent; /* fully transparent */
-  backdrop-filter: blur(6px); /* subtle glass over background */
-  -webkit-backdrop-filter: blur(6px);
-  border-bottom: none; /* remove line that could appear as a band */
+  background: rgba(16,16,18,0.28); /* translucent tint for glass effect */
+  backdrop-filter: saturate(140%) blur(12px); /* frosted glass */
+  -webkit-backdrop-filter: saturate(140%) blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08); /* subtle separation */
 }
 
 .App-link {
@@ -518,10 +518,14 @@ a {
   position: sticky;
   top: 0;
   z-index: 10000;
-  background: transparent; /* fully transparent */
-  backdrop-filter: blur(6px); /* subtle glass over background */
-  -webkit-backdrop-filter: blur(6px);
-  border-bottom: none; /* remove line that could appear as a band */
+  background: rgba(16,16,18,0.28); /* translucent tint for glass effect */
+  backdrop-filter: saturate(140%) blur(8px); /* frosted glass */
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.08); /* subtle separation */
+}
+/* Fallback for browsers without backdrop-filter support */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .app-header { background: rgba(16,16,18,0.6); }
 }
 .header-inner {
   max-width: 1100px;
