@@ -55,7 +55,7 @@ export default function Header() {
       <div className="header-inner">
         <a href="/" className="header-brand" aria-label="home">
           <img src="./logo.png" alt="logo" className="brand-logo" />
-          <span className="brand-name">dearbabywav</span>
+          <span className="brand-name">WELCOMEWAV</span>
         </a>
 
         <div className="header-actions">
