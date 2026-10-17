@@ -41,6 +41,10 @@
 
   "members.title": "CÁC THÀNH VIÊN",
   "members.intro": "Mục này cung cấp hình ảnh và vài nét đặc trưng để bạn dễ nhớ mặt gọi tên từng thành viên.",
+  "members.groupBy": "Xem theo unit",
+  "members.groupNone": "Không chia nhóm (S1 → S24)",
+  "members.otherMembers": "Các thành viên khác",
+  "members.leader": "Leader",
   "members.disclaimerTitle": "***** Lưu ý *****",
   "members.disclaimer": "Vì các thành viên trước đây được công bố lần lượt trong series SIGNAL, để tránh spoil và có trải nghiệm tốt hơn, nên xem series trước khi đọc thông tin.",
   "members.cards": {

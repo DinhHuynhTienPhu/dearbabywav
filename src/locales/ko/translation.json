@@ -41,6 +41,10 @@
 
   "members.title": "멤버",
   "members.intro": "멤버별 사진과 특징을 정리했어요. 이름과 얼굴을 기억하는 데 참고하세요.",
+  "members.groupBy": "유닛별로 보기",
+  "members.groupNone": "전체 보기 (S1 → S24)",
+  "members.otherMembers": "그 외 멤버",
+  "members.leader": "리더",
   "members.disclaimerTitle": "***** 주의 *****",
   "members.disclaimer": "멤버들은 원래 SIGNAL 시리즈에서 한 명씩 공개되었어요. 스포일러를 피하고 더 재밌게 즐기고 싶다면, 아래 정보를 읽기 전에 시리즈부터 보는 걸 추천해요.",
 

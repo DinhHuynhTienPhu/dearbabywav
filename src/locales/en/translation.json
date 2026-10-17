@@ -41,6 +41,10 @@
 
   "members.title": "MEMBERS",
   "members.intro": "This section will provide images of each members and their unique traits for you to remember their names and faces.",
+  "members.groupBy": "Group by unit",
+  "members.groupNone": "No grouping (S1 → S24)",
+  "members.otherMembers": "Other members",
+  "members.leader": "Leader",
   "members.disclaimerTitle": "***** Disclaimer *****",
   "members.disclaimer": "Since members used to be revealed one by one in the SIGNAL series, for better experience and prevent spoilers, it is recommended to watch the series first before reading the infos.",
 

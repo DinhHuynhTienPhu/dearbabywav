@@ -2,7 +2,8 @@
 // Dùng: node tools/screenshot.mjs <url> <out.png> <width> <height> <mobile 0|1> [cssSelector] [waitMs] [jsBeforeShot]
 // Ví dụ: node tools/screenshot.mjs http://localhost:5055/ out.png 390 844 1 ".links-grid-container"
 // jsBeforeShot: đoạn JS chạy sau khi cuộn, trước khi chụp (vd mở menu: "document.querySelector('.nav-toggle').click()")
-// cssSelector để "" nếu không cần cuộn.
+// cssSelector để "" nếu không cần cuộn. Biến môi trường AFTER_JS_WAIT (ms, mặc định 600) = thời gian chờ sau jsBeforeShot
+// (tăng lên ~2500 nếu JS làm hiện ảnh lazy mới, vd đổi dropdown unit).
 import { spawn } from 'node:child_process';
 import { writeFileSync, mkdtempSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -45,7 +46,7 @@ if (selector) {
 await sleep(+waitMs);
 if (jsBeforeShot) {
   await send('Runtime.evaluate', { expression: jsBeforeShot });
-  await sleep(600);
+  await sleep(+(process.env.AFTER_JS_WAIT || 600));
 }
 const shot = await send('Page.captureScreenshot', { format: 'png' });
 writeFileSync(out, Buffer.from(shot.result.data, 'base64'));

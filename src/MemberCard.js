@@ -32,7 +32,8 @@ function renderInfo(info) {
     });
 }
 
-function MemberCard( {sourceImage, infos, id, link} ) {
+// leaderLabel: text of the "★ Leader" badge when this member leads the unit group being shown, otherwise null
+function MemberCard( {sourceImage, infos, id, link, leaderLabel} ) {
     // Use anchor as wrapper if link is provided
     const Wrapper = link ? 'a' : 'div';
     const wrapperProps = link
@@ -42,8 +43,11 @@ function MemberCard( {sourceImage, infos, id, link} ) {
     return (
         <Wrapper className='member-card section-text member-card-link' {...wrapperProps}>
             <div className='member-id'>{id} </div>
-            {/* width/height = real image size (600x927), only used to reserve the space before the lazy image loads */}
-            <img src={sourceImage} alt='member' className='member-image' loading='lazy' decoding='async' width={600} height={927} />
+            <div className='member-photo'>
+                {/* width/height = real image size (600x927), only used to reserve the space before the lazy image loads */}
+                <img src={sourceImage} alt='member' className='member-image' loading='lazy' decoding='async' width={600} height={927} />
+                {leaderLabel && <div className='member-leader-badge'>★ {leaderLabel}</div>}
+            </div>
             <div className='member-infos'>
                 {infos.map((info, index) => (
                     <div className='section-text' key={index}>{renderInfo(info)}</div>
