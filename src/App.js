@@ -31,8 +31,8 @@ function App() {
       <WhatIsTripleS />
       <AboutTheSystem />
       <OtherNamesTerms />
-      <MembersGrid />
       <GetToKnowThem />
+      <MembersGrid />
       <OtherLinks />
       </div>
       <Footer />

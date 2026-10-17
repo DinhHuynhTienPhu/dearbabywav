@@ -29,7 +29,7 @@ function OtherNameTerms() {
                         </p>
                         
                         <p className='section-text'>
-                            <a href='https://triples.fandom.com/wiki/WAV'>WAV </a>: {t('terms.wav')}
+                            <a href='https://triples.fandom.com/wiki/WAV'>WAV</a>: {t('terms.wav')}
                             </p>
                         <p className='section-text'>
                             <a href='https://www.youtube.com/watch?v=jn2hiI7rqTA&list=PLtfvnr3voKT2TA3uFFqrrzNdOrfGQKlEs&ab_channel=tripleSofficial'> SIGNAL</a>: {t('terms.signal')}

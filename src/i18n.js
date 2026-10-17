@@ -12,6 +12,14 @@ const resources = {
   ko: { translation: ko },
 };
 
+// Keep <html lang> in sync. Registered before init so the first detected language is caught too
+// (used by :lang(ko) CSS and SEO)
+i18n.on('languageChanged', (lng) => {
+  if (typeof document !== 'undefined') {
+    document.documentElement.setAttribute('lang', lng);
+  }
+});
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)

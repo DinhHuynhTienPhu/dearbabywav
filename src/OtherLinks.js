@@ -68,7 +68,7 @@ function OtherLinks() {
             image: './linklogos/ins.webp',
             title: 'Official Instagram',
             description: officialDesc[3] || 'Visual updates, reels, member posts, and more.',
-            url: 'https://x.com/triplescosmos',
+            url: 'https://www.instagram.com/triplescosmos/',
         },
         {
             image: './linklogos/discord.webp',
@@ -125,11 +125,10 @@ function OtherLinks() {
             icon: 'https://www.gstatic.com/marketing-cms/assets/images/66/c5/8716b9e44f4d80560a493456e672/google-slides.webp=s96-fcrop64=1,00000000ffffffff-rw'
         },
         {
-            image: './linklogos/wavflow.webp',
-            title: 'WAVFLOW',
-            description: fanmadeDesc[6] || 'Modern, sleek, and user-friendly interface for exploring tripleS content.',
-            url: 'https://wavflow.vercel.app/site/wav',
-            icon: './logo.png'
+            image: './linklogos/sssflix.webp',
+            title: 'SSSflix',
+            description: fanmadeDesc[6] || 'Watch tripleS content as if you are browsing netflix',
+            url: 'https://sssflix.vercel.app',
         },
         {
             image: './linklogos/doc.webp',

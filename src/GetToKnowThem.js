@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { useTranslation } from 'react-i18next';
 
-const Step = ({ step, active, side, onClick }) => {
+const Step = ({ step, number, active, side, onClick }) => {
     const handleClick = (e) => {
         e.preventDefault();
         if (step.url) {
@@ -14,6 +14,7 @@ const Step = ({ step, active, side, onClick }) => {
 
     const Content = (
         <div className="gk-content">
+            <div className="gk-num">{String(number).padStart(2, '0')}</div>
             {step.url ? (
                 <a
                     className="gk-title gk-title-link"
@@ -51,6 +52,7 @@ function GetToKnowThem() {
         { icon: './thesis.webp', url: 'https://www.youtube.com/watch?v=TVrdkrqpBV4' },
         { icon: './gurashow.webp', url: 'https://www.youtube.com/watch?v=HaUXySGq2DY' },
         { icon: './weeklyidol.jpg', url: 'https://www.youtube.com/watch?v=7fJQAljAMJQ' },
+        { icon: './chaeyeonguide.webp', url: 'https://www.youtube.com/watch?v=IE0hEAgT2UY' },
         { icon: './benatmos.webp', url: 'https://youtu.be/3yCF8aXzgnI?si=IA9EISdm1eQ4pgWN' },
         { icon: './badgewar.webp', url: 'https://www.youtube.com/watch?v=H3Eidd3h4CE&list=PLuuVJzM7See49APBWO33WMLcal8qq8K6O' },
         { icon: './signal.png', url: 'https://www.youtube.com/watch?v=jn2hiI7rqTA&list=PLtfvnr3voKT2TA3uFFqrrzNdOrfGQKlEs' },
@@ -73,7 +75,7 @@ function GetToKnowThem() {
                 <div className="gk-progress" style={{ height: '100%' }} aria-hidden="true" />
                 <div className="gk-steps">
                     {steps.map((s, idx) => (
-                        <Step key={idx} step={s} active={true} side={idx % 2 === 0 ? 'left' : 'right'} />
+                        <Step key={idx} step={s} number={idx + 1} active={true} side={idx % 2 === 0 ? 'left' : 'right'} />
                     ))}
                 </div>
             </div>
