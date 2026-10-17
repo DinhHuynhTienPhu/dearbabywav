@@ -7,7 +7,7 @@ function OtherNameTerms() {
     const { t } = useTranslation();
 
     return (
-        <section className='section'>
+        <section className='section' id='terms'>
             <div className='section'>
                 <h1 className='section-header'>
                     {t('terms.title')}
@@ -55,7 +55,7 @@ function OtherNameTerms() {
                         marginRight: '20px',                        
                     }} >
                         <a href='https://www.youtube.com/watch?v=jn2hiI7rqTA&list=PLtfvnr3voKT2TA3uFFqrrzNdOrfGQKlEs&ab_channel=tripleSofficial'>
-                        <img className='hover-scale-up' src='./signal.png' alt='xinyu' style={{
+                        <img className='hover-scale-up' src='./signal.png' alt='xinyu' loading='lazy' decoding='async' style={{
                             width: '25vw',
                                 height: 'auto',
                             marginRight:'-10%'

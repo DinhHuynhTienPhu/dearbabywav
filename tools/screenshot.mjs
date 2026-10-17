@@ -1,12 +1,14 @@
 // Chụp 1 vùng của trang bằng Chrome headless (qua DevTools protocol), không cần cài thêm package.
-// Dùng: node tools/screenshot.mjs <url> <out.png> <width> <height> <mobile 0|1> [cssSelector] [waitMs]
+// Dùng: node tools/screenshot.mjs <url> <out.png> <width> <height> <mobile 0|1> [cssSelector] [waitMs] [jsBeforeShot]
 // Ví dụ: node tools/screenshot.mjs http://localhost:5055/ out.png 390 844 1 ".links-grid-container"
+// jsBeforeShot: đoạn JS chạy sau khi cuộn, trước khi chụp (vd mở menu: "document.querySelector('.nav-toggle').click()")
+// cssSelector để "" nếu không cần cuộn.
 import { spawn } from 'node:child_process';
 import { writeFileSync, mkdtempSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
-const [url, out, w, h, mobile, selector, waitMs = '5000'] = process.argv.slice(2);
+const [url, out, w, h, mobile, selector, waitMs = '5000', jsBeforeShot] = process.argv.slice(2);
 const chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const profile = mkdtempSync(join(tmpdir(), 'cdp-'));
 const port = 9333 + Math.floor(Math.random() * 500);
@@ -41,6 +43,10 @@ if (selector) {
 }
 // ảnh có loading="lazy" cần thời gian tải sau khi cuộn
 await sleep(+waitMs);
+if (jsBeforeShot) {
+  await send('Runtime.evaluate', { expression: jsBeforeShot });
+  await sleep(600);
+}
 const shot = await send('Page.captureScreenshot', { format: 'png' });
 writeFileSync(out, Buffer.from(shot.result.data, 'base64'));
 console.log('saved', out);

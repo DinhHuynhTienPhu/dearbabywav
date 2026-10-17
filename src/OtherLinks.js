@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { useTranslation } from 'react-i18next';
+import { trackClick } from './analytics.js';
 
 const LinkCard = ({ image, title, description, url, icon }) => {
     let favicon = undefined;
@@ -25,8 +26,9 @@ const LinkCard = ({ image, title, description, url, icon }) => {
             rel="noopener noreferrer"
             className="link-card hover-scale-up"
             aria-label={`${title} - external link`}
+            onClick={() => trackClick('link: ' + title)}
         >
-            <img src={image} alt={title} className="link-image" onError={handleImgError} />
+            <img src={image} alt={title} className="link-image" loading="lazy" decoding="async" onError={handleImgError} />
             <div className="link-content">
                 <div className="link-title-row">
                     {iconSrc && (
@@ -147,7 +149,7 @@ function OtherLinks() {
     ];
 
     return (
-        <section className="section">
+        <section className="section" id="links">
             <h1 className="section-header">{t('links.title')}</h1>
             <p className="section-text">
                 {t('links.subtitle')}
@@ -173,8 +175,6 @@ function OtherLinks() {
                     </div>
                 ))}
             </div>
-            {/* spacer to ensure content is not hidden behind footer on small viewports */}
-            <div aria-hidden="true" className="mobile-spacer" />
         </section>
         
     );

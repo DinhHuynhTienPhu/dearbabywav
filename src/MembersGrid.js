@@ -35,7 +35,7 @@ function MembersGrid() {
     ];
         
     return (
-        <section className='section'>
+        <section className='section' id='members'>
             <div className='section'>
                 <h1 className='section-header'>
                     {t('members.title')}
@@ -62,9 +62,6 @@ function MembersGrid() {
                         </div>
                     ))}
                 </div>
-                <div aria-hidden="true" className="mobile-spacer" />
-                <div aria-hidden="true" className="mobile-spacer" />
-
             </div>
 
         </section>

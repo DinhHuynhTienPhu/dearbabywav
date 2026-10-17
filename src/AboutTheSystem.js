@@ -6,7 +6,7 @@ function AboutTheSystem() {
     const { t } = useTranslation();
 
     return (
-        <section className='section'>
+        <section className='section' id='system'>
             <div className='section'>
                 <h1 className='section-header'>
                     {t('system.title')}
@@ -49,7 +49,7 @@ function AboutTheSystem() {
                         marginRight: '20px',
                     }} >
                         <a href='https://triples.fandom.com/wiki/Objekt'>
-                            <img className='hover-scale-up'  src='./xinyu.webp' alt='xinyu' style={{
+                            <img className='hover-scale-up'  src='./xinyu.webp' alt='xinyu' loading='lazy' decoding='async' width={600} height={927} style={{
                             width: '20vw',
                             height: 'auto',
                             }} />

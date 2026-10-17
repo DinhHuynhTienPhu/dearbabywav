@@ -2,6 +2,15 @@
   "welcome.title": "WELCOMEWAV",
   "welcome.subtitle": "Chúc bạn có những trải nghiệm tuyệt vời khi stan group with all possibilities",
 
+  "nav.menu": "Các mục",
+  "nav.triples": "tripleS",
+  "nav.system": "Hệ thống",
+  "nav.terms": "Thuật ngữ",
+  "nav.know": "Làm quen",
+  "nav.members": "Thành viên",
+  "nav.links": "Liên kết",
+  "nav.backToTop": "Lên đầu trang",
+
   "whatIsThis.title": "TRANG NÀY LÀ GÌ",
   "whatIsThis.body1": "Trang này là một bản hướng dẫn đơn giản giúp bạn làm quen với tripleS.",
   "whatIsThis.body2": "Mục tiêu là giúp bạn hiểu những thông tin cơ bản về các thành viên và hệ thống của nhóm.",
@@ -98,5 +107,6 @@
     "Page cho ppotoz con"
   ],
 
-  "footer.madeBy": "made by wav with"
+  "footer.madeBy": "made by wav with",
+  "footer.visitors": "{{n}} WAV đã ghé thăm trang này"
 }

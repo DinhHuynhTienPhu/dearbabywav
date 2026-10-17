@@ -2,6 +2,15 @@
   "welcome.title": "WELCOMEWAV",
   "welcome.subtitle": "모든 가능성을 지닌 그룹, tripleS와 함께 행복한 덕질 하세요!",
 
+  "nav.menu": "메뉴",
+  "nav.triples": "tripleS",
+  "nav.system": "시스템",
+  "nav.terms": "용어",
+  "nav.know": "알아가기",
+  "nav.members": "멤버",
+  "nav.links": "링크",
+  "nav.backToTop": "맨 위로",
+
   "whatIsThis.title": "이 페이지 소개",
   "whatIsThis.body1": "tripleS를 쉽고 빠르게 알아갈 수 있도록 만든 간단한 입문 가이드예요.",
   "whatIsThis.body2": "멤버와 시스템에 대한 기본 정보를 이해하는 데 도움을 드리는 것이 목표예요.",
@@ -99,5 +108,6 @@
     "둘이 마지막으로 함께한 게 언제였는지 궁금했던 적 있나요? 저도요."
   ],
 
-  "footer.madeBy": "made by wav with"
+  "footer.madeBy": "made by wav with",
+  "footer.visitors": "{{n}}명의 WAV가 이 사이트를 방문했어요"
 }

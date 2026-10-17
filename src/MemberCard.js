@@ -1,6 +1,7 @@
 import React from 'react';
  //import classNames from 'classnames';
 import './App.css';
+import { trackClick } from './analytics.js';
 
 // Info text in translation files supports 2 small markups:
 //   <s>text</s>  -> strikethrough
@@ -17,6 +18,7 @@ function renderInfo(info) {
                 // keep the card's own wiki link from firing
                 e.preventDefault();
                 e.stopPropagation();
+                trackClick('member link: ' + link[2]);
                 window.open(link[2], '_blank', 'noopener,noreferrer');
             };
             return (
@@ -34,13 +36,14 @@ function MemberCard( {sourceImage, infos, id, link} ) {
     // Use anchor as wrapper if link is provided
     const Wrapper = link ? 'a' : 'div';
     const wrapperProps = link
-        ? { href: link, target: '_blank', rel: 'noopener noreferrer' }
+        ? { href: link, target: '_blank', rel: 'noopener noreferrer', onClick: () => trackClick('member: S' + id) }
         : {};
 
     return (
         <Wrapper className='member-card section-text member-card-link' {...wrapperProps}>
             <div className='member-id'>{id} </div>
-            <img src={sourceImage} alt='member' className='member-image' />
+            {/* width/height = real image size (600x927), only used to reserve the space before the lazy image loads */}
+            <img src={sourceImage} alt='member' className='member-image' loading='lazy' decoding='async' width={600} height={927} />
             <div className='member-infos'>
                 {infos.map((info, index) => (
                     <div className='section-text' key={index}>{renderInfo(info)}</div>

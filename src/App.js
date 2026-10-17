@@ -10,6 +10,7 @@ import GetToKnowThem from './GetToKnowThem.js';
 import Footer from './Footer.js';
 import { useTranslation } from 'react-i18next';
 import Header from './Header.js';
+import BackToTop from './BackToTop.js';
 
 function App() {
   useTranslation();
@@ -36,6 +37,7 @@ function App() {
       <OtherLinks />
       </div>
       <Footer />
+      <BackToTop />
 
     </div>
   );

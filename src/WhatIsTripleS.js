@@ -7,7 +7,7 @@ function WhatIsTripleS() {
     const { t } = useTranslation();
 
     return (
-        <section className='section'>
+        <section className='section' id='triples'>
             <div className='section'>
                 <h1 className='section-header'>
                     {t('whatIs.title')}

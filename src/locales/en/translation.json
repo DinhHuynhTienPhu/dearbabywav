@@ -2,6 +2,15 @@
   "welcome.title": "WELCOMEWAV",
   "welcome.subtitle": "WISH YOU ALL THE BEST STANNING THE GROUP WITH ALL POSSIBILITIES",
 
+  "nav.menu": "Sections",
+  "nav.triples": "tripleS",
+  "nav.system": "System",
+  "nav.terms": "Terms",
+  "nav.know": "Get to know",
+  "nav.members": "Members",
+  "nav.links": "Links",
+  "nav.backToTop": "Back to top",
+
   "whatIsThis.title": "WHAT IS THIS PAGE",
   "whatIsThis.body1": "This page aims to be a simple, straightforward guide to help you get to know tripleS.",
   "whatIsThis.body2": "Our goal is to help you understand the basic information about the group’s members and system.",
@@ -99,5 +108,6 @@
     "Ever wondered when was their last interaction? Me too"
   ],
 
-  "footer.madeBy": "made by wav with"
+  "footer.madeBy": "made by wav with",
+  "footer.visitors": "{{n}} WAV visited this site"
 }
